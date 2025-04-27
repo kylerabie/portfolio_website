@@ -1,9 +1,12 @@
-/* 5. app/globals.css */
-/* Tailwind setup */
+/* app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-gray-50;
+  @apply bg-gray-100;
+}
+
+h1, h2, h3 {
+  @apply font-sans;
 }
