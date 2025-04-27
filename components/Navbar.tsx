@@ -1,30 +1,18 @@
-// 4. components/Navbar.tsx
-// Reusable navigation, like a Java component
+// components/Navbar.tsx
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">
+    <nav className="bg-white shadow-sm sticky top-0 z-10">
+      <div className="container mx-auto p-4 flex justify-between items-center">
+        <Link href="/" className="text-2xl font-bold text-gray-800">
           Your Name
         </Link>
-        <div className="space-x-4">
-          <Link href="/" className="hover:underline">
+        <div className="space-x-6">
+          <Link href="/" className="text-gray-600 hover:text-gray-800">
             Home
           </Link>
-          <Link href="/blog" className="hover:underline">
-            Blog
-          </Link>
-          <Link href="/gallery" className="hover:underline">
-            Gallery
-          </Link>
-          <Link href="/shop" className="hover:underline">
-            Shop
-          </Link>
-          <Link href="/checkers" className="hover:underline">
-            Checkers
-          </Link>
+          {/* Add About later if needed */}
         </div>
       </div>
     </nav>
